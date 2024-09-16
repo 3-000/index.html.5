@@ -38,7 +38,7 @@ def init_db():
         if not User.query.filter_by(username='user1').first():
             user1 = User(username='user1')
             user1.set_password('password1')
-            user1.balance = 100000000000000000
+            user1.balance = 1000000000000000000000000000000000000000000000000000000000000000
             db.session.add(user1)
             db.session.commit()
 
